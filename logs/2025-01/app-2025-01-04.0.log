@@ -1,0 +1,48 @@
+2025-01-04T19:01:57.572+01:00  INFO 21268 --- [backend] [main] com.example.backend.BackendApplication   : Starting BackendApplication using Java 21.0.2 with PID 21268 (C:\Users\konra\OneDrive\Pulpit\announcements-board-master\backend\target\classes started by konra in C:\Users\konra\OneDrive\Pulpit\announcements-board-master)
+2025-01-04T19:01:57.578+01:00  INFO 21268 --- [backend] [main] com.example.backend.BackendApplication   : The following 1 profile is active: "default"
+2025-01-04T19:02:04.342+01:00  INFO 21268 --- [backend] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-04T19:02:04.952+01:00  INFO 21268 --- [backend] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 517 ms. Found 3 JPA repository interfaces.
+2025-01-04T19:02:07.032+01:00  INFO 21268 --- [backend] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-01-04T19:02:07.068+01:00  INFO 21268 --- [backend] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-04T19:02:07.069+01:00  INFO 21268 --- [backend] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2025-01-04T19:02:07.232+01:00  INFO 21268 --- [backend] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-04T19:02:07.233+01:00  INFO 21268 --- [backend] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 9021 ms
+2025-01-04T19:02:07.371+01:00  INFO 21268 --- [backend] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-01-04T19:02:08.075+01:00  INFO 21268 --- [backend] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./database user=SA
+2025-01-04T19:02:08.079+01:00  INFO 21268 --- [backend] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-01-04T19:02:08.102+01:00  INFO 21268 --- [backend] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./database'
+2025-01-04T19:02:08.356+01:00  INFO 21268 --- [backend] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-04T19:02:08.528+01:00  INFO 21268 --- [backend] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2025-01-04T19:02:08.625+01:00  INFO 21268 --- [backend] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-01-04T19:02:09.494+01:00  INFO 21268 --- [backend] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-04T19:02:12.197+01:00  INFO 21268 --- [backend] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-04T19:02:12.369+01:00  INFO 21268 --- [backend] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-04T19:02:13.311+01:00  WARN 21268 --- [backend] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-04T19:02:14.235+01:00  INFO 21268 --- [backend] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-01-04T19:02:16.673+01:00  INFO 21268 --- [backend] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authProvider
+2025-01-04T19:02:16.682+01:00  WARN 21268 --- [backend] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2025-01-04T19:02:17.527+01:00  INFO 21268 --- [backend] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@68c9cf93, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2715b3ea, org.springframework.security.web.context.SecurityContextHolderFilter@520c235f, org.springframework.security.web.header.HeaderWriterFilter@439c706, org.springframework.web.filter.CorsFilter@30130a31, org.springframework.security.web.authentication.logout.LogoutFilter@1d691d4f, com.example.backend.security.JwtFilter@3c2e73ce, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@675c1335, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@70721c2d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5aa0d535, org.springframework.security.web.session.SessionManagementFilter@53e6b541, org.springframework.security.web.access.ExceptionTranslationFilter@5146ae5e, org.springframework.security.web.access.intercept.AuthorizationFilter@74876292]
+2025-01-04T19:02:18.721+01:00  INFO 21268 --- [backend] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-01-04T19:02:18.748+01:00  INFO 21268 --- [backend] [main] com.example.backend.BackendApplication   : Started BackendApplication in 25.403 seconds (process running for 30.871)
+2025-01-04T19:02:30.495+01:00  INFO 21268 --- [backend] [task-1] c.e.b.services.AnnouncementService       : Announcement with id: 3 was successfully deleted (expired)
+2025-01-04T19:02:30.501+01:00  INFO 21268 --- [backend] [task-1] c.e.b.services.AnnouncementService       : Announcement with id: 7 was successfully deleted (expired)
+2025-01-04T19:02:30.507+01:00  INFO 21268 --- [backend] [task-1] c.e.b.services.AnnouncementService       : Announcement with id: 8 was successfully deleted (expired)
+2025-01-04T19:02:43.515+01:00  INFO 21268 --- [backend] [task-4] c.example.backend.services.EmailService  : Email sent to: amk21062@doolk.com
+2025-01-04T19:02:44.117+01:00  INFO 21268 --- [backend] [task-3] c.example.backend.services.EmailService  : Email sent to: konradj578@gmail.com
+2025-01-04T19:02:44.538+01:00  INFO 21268 --- [backend] [task-2] c.example.backend.services.EmailService  : Email sent to: konradj578@gmail.com
+2025-01-04T19:04:50.878+01:00  INFO 21268 --- [backend] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-04T19:04:50.879+01:00  INFO 21268 --- [backend] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-01-04T19:04:50.883+01:00  INFO 21268 --- [backend] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2025-01-04T19:04:51.006+01:00  INFO 21268 --- [backend] [http-nio-8080-exec-1] c.e.b.c.AnnouncementController           : Getting all reviewed announcements
+2025-01-04T19:04:55.283+01:00  INFO 21268 --- [backend] [http-nio-8080-exec-3] c.e.b.c.AnnouncementController           : Getting all reviewed announcements
+2025-01-04T19:05:01.650+01:00  INFO 21268 --- [backend] [http-nio-8080-exec-5] c.e.b.c.AuthenticationController         : Logging in user: koney
+2025-01-04T19:05:05.075+01:00  INFO 21268 --- [backend] [http-nio-8080-exec-7] c.e.b.c.AnnouncementController           : Getting all announcements
+2025-01-04T19:05:07.183+01:00  INFO 21268 --- [backend] [http-nio-8080-exec-9] c.e.b.controllers.CategoryController     : Getting all categories
+2025-01-04T19:05:10.701+01:00  INFO 21268 --- [backend] [http-nio-8080-exec-10] c.e.b.c.AnnouncementController           : Getting all announcements
+2025-01-04T19:05:11.558+01:00  INFO 21268 --- [backend] [http-nio-8080-exec-1] c.e.b.controllers.CategoryController     : Getting all categories
+2025-01-04T19:05:12.562+01:00  INFO 21268 --- [backend] [http-nio-8080-exec-3] c.e.b.controllers.CategoryController     : Getting all categories
+2025-01-04T19:05:13.548+01:00  INFO 21268 --- [backend] [http-nio-8080-exec-5] c.e.b.c.AnnouncementController           : Getting all reviewed announcements
+2025-01-04T19:05:15.993+01:00  INFO 21268 --- [backend] [http-nio-8080-exec-6] c.e.b.controllers.CategoryController     : Getting all categories
+2025-01-04T19:05:26.906+01:00  INFO 21268 --- [backend] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-04T19:05:26.911+01:00  INFO 21268 --- [backend] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-01-04T19:05:26.915+01:00  INFO 21268 --- [backend] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
