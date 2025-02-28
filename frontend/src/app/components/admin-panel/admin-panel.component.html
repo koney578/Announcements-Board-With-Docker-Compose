@@ -1,0 +1,17 @@
+<div class="container-fluid mt-2">
+  <div class="d-flex justify-content-center">
+    <div>
+      <h2 class="center">Panel administratora</h2>
+      <div class="d-flex justify-content-center">
+        <button (click)="switchTab('announcements')" type="button" class="btn me-2" [ngClass]="currentTab === 'announcements' ? 'btn-primary' : 'btn-outline-primary'">Ogłoszenia</button>
+        <button (click)="switchTab('categories')" type="button" class="btn me-2" [ngClass]="currentTab === 'categories' ? 'btn-primary' : 'btn-outline-primary'">Kategorie</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-2">
+    <app-admin-announcements *ngIf="currentTab === 'announcements'" />
+    <app-category *ngIf="currentTab === 'categories'" />
+  </div>
+</div>
+

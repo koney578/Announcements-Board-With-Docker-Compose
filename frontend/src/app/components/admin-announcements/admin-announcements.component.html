@@ -1,0 +1,18 @@
+<div *ngIf="unreviewedAnnouncements.length !== 0" class="mb-3">
+  <h4>Ogłoszenia wymagające rozpatrzenia:</h4>
+  <div class="mb-4" *ngFor="let announcement of unreviewedAnnouncements">
+    <div class="mb-2">
+      <app-announcement-element [announcement]="announcement" class="mb-2"></app-announcement-element>
+    </div>
+    <button type="button" (click)="reviewAnnouncement(announcement.id)" class="btn btn-sm btn-success me-2">Zaakceptuj</button>
+    <button type="button" (click)="removeAnnouncement(announcement.id)" class="btn btn-sm btn-danger me-2">Usuń</button>
+  </div>
+</div>
+
+<h4>Ogłoszenia publiczne:</h4>
+<div class="mb-4" *ngFor="let announcement of reviewedAnnouncements">
+  <div class="mb-2">
+    <app-announcement-element [announcement]="announcement"></app-announcement-element>
+  </div>
+  <button (click)="removeAnnouncement(announcement.id)" class="btn btn-sm btn-danger me-2">Usuń</button>
+</div>

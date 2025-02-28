@@ -1,0 +1,5 @@
+<div class="d-flex align-items-center">
+  <p class="me-3 my-2">Kategoria: {{ category.name }}</p>
+  <button class="btn btn-sm btn-primary me-2" (click)="editCategory(category.id)">Edytuj</button>
+  <button class="btn btn-sm btn-danger me-2" (click)="deleteCategory(category.id)">Usuń</button>
+</div>

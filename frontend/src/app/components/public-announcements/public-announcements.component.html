@@ -1,0 +1,6 @@
+<div class="container-fluid">
+  <h4>Lista ogłoszeń:</h4>
+  <div class="mb-4" *ngFor="let announcement of announcements">
+    <app-announcement-element [announcement]="announcement"></app-announcement-element>
+  </div>
+</div>
